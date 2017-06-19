@@ -11,10 +11,10 @@
 NeedItUtils.prototype = {
     initialize: function() {
     },
-	isDatePast: function(strDate){
+	isDatePast: function(ttt){
 		// Create GlideDateTime objects for the current date and the passed in date
 		var rightnow = new GlideDateTime();
-		var testdate = new GlideDateTime(strDate);
+		var testdate = new GlideDateTime(ttt);
 		
 		// If the testdate is before rightnow, return true, else return false
 		if (testdate.before(rightnow)) {
@@ -25,11 +25,11 @@ NeedItUtils.prototype = {
 		}
 	},
 	
-		isDateToday: function(strDate){
+		isDateToday: function(guowejuan){
 		
 		// Create GlideDateTime objects for the current date and the passed in date
 		var rightnow = new GlideDateTime();
-		var testdate = new GlideDateTime(strDate);
+		var testdate = new GlideDateTime(guowejuan);
 		// Get the date portion of rightnow and testdate (no timestamp)
 		var today = rightnow.getLocalDate();
 		var istoday = testdate.getLocalDate();
@@ -48,9 +48,9 @@ NeedItUtils.prototype = {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-03-09 21:52:03</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>6e6bc21b9f913200bde5f79ff57fcfb6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>NeedItUtils</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy>read</sys_policy>
@@ -58,6 +58,6 @@ NeedItUtils.prototype = {
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_include_6e6bc21b9f913200bde5f79ff57fcfb6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-03-09 21:52:03</sys_updated_on>
+        <sys_updated_on>2017-06-13 02:54:12</sys_updated_on>
     </sys_script_include>
 </record_update>
